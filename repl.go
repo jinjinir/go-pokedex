@@ -21,7 +21,8 @@ func startRepl() {
 		availableCommands := getCommands()
 		command, ok := availableCommands[commandName]
 		if !ok {
-			fmt.Println("Invalid Command. Type 'help' to see available options.")
+			fmt.Println(
+				"Invalid Command. Type 'help' to see available options.")
 			continue
 		}
 		command.callback()
@@ -36,6 +37,11 @@ type cliCommand struct {
 
 func getCommands() map[string]cliCommand {
 	return map[string]cliCommand{
+		"clear": {
+			name:        "clear",
+			description: "Clears the screen",
+			callback:    callbackClear,
+		},
 		"help": {
 			name:        "help",
 			description: "Prints the help menu",
