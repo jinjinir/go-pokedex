@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func callbackHelp(cfg *config) error {
+func callbackHelp(cfg *config, args ...string) error {
 	fmt.Println("Welcome to the Go-Pokedex! ")
 	fmt.Println("Here are all the available options:")
 

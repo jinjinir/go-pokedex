@@ -23,7 +23,7 @@ func init() {
 	}
 }
 
-func callbackClear(cfg *config) error {
+func callbackClear(cfg *config, args ...string) error {
 	value, ok := clear[runtime.GOOS] //runtime.GOOS -> linux, windows, darwin etc.
 	if ok {                          //if we defined a clear func for that platform:
 		value() //we execute it
