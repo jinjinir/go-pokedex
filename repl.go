@@ -51,6 +51,16 @@ func getCommands() map[string]cliCommand {
 			description: "Clears the screen",
 			callback:    callbackClear,
 		},
+		"catch": {
+			name:        "catch {pokemon}",
+			description: "Attempt to catch a pokemon and add it to your pokedex",
+			callback:    callbackCatch,
+		},
+		"explore": {
+			name:        "explore {location area}",
+			description: "Lists the pokemon availabel in the area",
+			callback:    callbackExplore,
+		},
 		"help": {
 			name:        "help",
 			description: "Prints the help menu",
@@ -65,11 +75,6 @@ func getCommands() map[string]cliCommand {
 			name:        "mapb",
 			description: "Shows the previous map pages",
 			callback:    callbackMapb,
-		},
-		"explore": {
-			name:        "explore {location area}",
-			description: "Lists the pokemon availabel in the area",
-			callback:    callbackExplore,
 		},
 		"exit": {
 			name:        "exit",
