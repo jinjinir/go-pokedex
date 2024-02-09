@@ -18,14 +18,16 @@ func callbackInspect(cfg *config, args ...string) error {
 		return errors.New("You have not caught this pokemon yet")
 	}
 
-	fmt.Printf("Name %s\n", pokemon.Name)
-	fmt.Printf("Height %v\n", pokemon.Height)
-	fmt.Printf("Weight %v\n", pokemon.Weight)
+	fmt.Printf("Name: %s\n", pokemon.Name)
+	fmt.Printf("Height: %v\n", pokemon.Height)
+	fmt.Printf("Weight: %v\n", pokemon.Weight)
+	fmt.Printf("Stats: %v\n", pokemon.Weight)
 	for _, stat := range pokemon.Stats {
 		fmt.Printf("- %s: %v\n", stat.Stat.Name, stat.BaseStat)
 	}
+	fmt.Printf("Type/s: %v\n", pokemon.Weight)
 	for _, typ := range pokemon.Types {
-		fmt.Printf("- type: %s\n", typ.Type.Name)
+		fmt.Printf("- %s\n", typ.Type.Name)
 	}
 	return nil
 }
