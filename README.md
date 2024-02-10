@@ -34,7 +34,7 @@ go build && ./go-pokedex
 
 3. Interact with the REPL by typing in commands. A `help` function is provided.
 
-![`help` command in the REPL](img/go-pokedex.png)
+![`help` command in the REPL](https://github.com/jinjinir/go-pokedex/blob/main/img/go-pokedex-help.png)
 
 ## Contributing
 
