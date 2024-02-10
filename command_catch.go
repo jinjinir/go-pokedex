@@ -4,8 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"math/rand"
-	// "github.com/jinjinir/go-pokedex/internal/pokeapi"
-	// "log"
 )
 
 func callbackCatch(cfg *config, args ...string) error {

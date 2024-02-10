@@ -3,8 +3,6 @@ package main
 import (
 	"errors"
 	"fmt"
-	// "github.com/jinjinir/go-pokedex/internal/pokeapi"
-	// "log"
 )
 
 func callbackInspect(cfg *config, args ...string) error {

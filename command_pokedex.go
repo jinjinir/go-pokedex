@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	// "github.com/jinjinir/go-pokedex/internal/pokeapi"
-	// "log"
 )
 
 func callbackPokedex(cfg *config, args ...string) error {
